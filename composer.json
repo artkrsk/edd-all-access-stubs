@@ -1,0 +1,63 @@
+{
+  "name": "arts/edd-all-access-stubs",
+  "description": "PHPStan / IDE stubs for EDD All Access - auto-generated from source, self-contained, consumed via bootstrapFiles.",
+  "license": "GPL-3.0-or-later",
+  "type": "library",
+  "keywords": [
+    "easy-digital-downloads",
+    "edd",
+    "edd-all-access",
+    "phpstan",
+    "static-analysis",
+    "stubs",
+    "wordpress"
+  ],
+  "authors": [
+    {
+      "name": "Artem Semkin",
+      "email": "me@artemsemkin.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "arts/easy-digital-downloads-stubs": "^3.0",
+    "arts/edd-recurring-stubs": "@dev",
+    "arts/edd-software-licensing-stubs": "@dev",
+    "php-stubs/wordpress-stubs": "^6.9",
+    "php-stubs/wp-cli-stubs": "^2.12"
+  },
+  "require-dev": {
+    "php-stubs/generator": "^0.8",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../edd-software-licensing-stubs",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../edd-recurring-stubs",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/artkrsk/easy-digital-downloads-stubs"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "platform": {
+      "php": "8.0.0"
+    }
+  },
+  "scripts": {
+    "generate": "@php -d memory_limit=2G generate.php"
+  }
+}
