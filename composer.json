@@ -23,7 +23,7 @@
     "arts/easy-digital-downloads-stubs": "^3.0",
     "arts/edd-recurring-stubs": "^2.13",
     "arts/edd-software-licensing-stubs": "^3.8",
-    "php-stubs/wordpress-stubs": "^6.9",
+    "php-stubs/wordpress-stubs": "^7.0",
     "php-stubs/wp-cli-stubs": "^2.12"
   },
   "require-dev": {
